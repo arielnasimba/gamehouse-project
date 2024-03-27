@@ -27,7 +27,7 @@ export default function Login() {
           className={`w-full h-full font-semibold flex flex-col justify-between `}
         >
           <Link
-            href={``}
+            href={`/user-login`}
             className={`w-full h-[45%] flex bg-black rounded-3xl`}
           >
             <p className="m-auto text-white">Play</p>
