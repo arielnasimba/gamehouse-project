@@ -2,9 +2,7 @@
 import logoBlack from "../images/logos/logo-black.png"
 import logoWhite from "../images/logos/logo-white.png"
 import GAMING from "../images/auth-imgs/gaming.jpg"
-// import logoBlack from "../photos/flixieLogo/flixie-logo-black.png"
-// import POPBlack from "../photos/flixieLogo/popcorn-black.png"
-// import POPWhite from "../photos/flixieLogo/popcorn-white.png"
+import SIGNPAGE from "../images/signIn-imgs/sign-in-page.jpg"
 
 const LogosImages= [
     {
@@ -22,11 +20,12 @@ const LogosImages= [
         name: "gaming men",
         src: GAMING, 
     },
-    // {
-    //     id: "4",
-    //     name: "popcorn night",
-    //     src: POPWhite,
-    // },
+    {
+        id: "4",
+        name: "sign-in image",
+        src: SIGNPAGE,
+    },
 ];
 
 export default LogosImages;
+

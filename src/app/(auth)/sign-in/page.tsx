@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import AuthUser from "../../../components/AuthUser/AuthUser"
+import SignInUser from "../../../components/SignInUser/SignInUser"
 import icons from "../../../images-dir/btnIcon";
 import "./styles.css"
 import Link from "next/link";
-export default function UserLogin() {
+export default function SignIn() {
   return (
     <main className={`w-[100dvw] h-[100dvh] flex flex-col justify-end
                       
@@ -22,7 +22,7 @@ export default function UserLogin() {
       </button>
       </Link>
 
-      <AuthUser/>
+      <SignInUser/>
     </main>
   );
 }

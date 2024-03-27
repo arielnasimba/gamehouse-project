@@ -51,7 +51,7 @@ export default function Login() {
             <p className="m-auto ">Ready to play?</p>
           </Link>
           <Link
-            href={``}
+            href={`/sign-in`}
             className={`w-1/2 h-full flex  rounded-3xl`}
           >
             <p className="m-auto">Sign in</p>
