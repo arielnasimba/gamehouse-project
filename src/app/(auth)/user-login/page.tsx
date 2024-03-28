@@ -10,6 +10,7 @@ export default function UserLogin() {
                       
     `}
     > 
+    
     <Link
     href={`/`}
     >
@@ -22,7 +23,7 @@ export default function UserLogin() {
       </button>
       </Link>
 
-      <AuthUser/>
+      <AuthUser  />
     </main>
   );
 }

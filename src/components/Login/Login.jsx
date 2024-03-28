@@ -1,9 +1,12 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import logos from "../../images-dir/logoImages";
 import Link from "next/link";
 
 export default function Login() {
+
+  const [user, setUser] = useState("ariel");
   return (
     <div
       className={`w-[24rem] h-[48rem]  mx-auto mb-10 flex flex-col justify-end gap-10 `}
@@ -33,7 +36,7 @@ export default function Login() {
             <p className="m-auto text-white">Play</p>
           </Link>
           <Link
-            href={``}
+            href={`/main-page/${user}`}
             className={`w-full h-[45%] flex bg-white rounded-3xl`}
           >
             <p className="m-auto">Explore</p>
@@ -54,7 +57,7 @@ export default function Login() {
             href={`/sign-in`}
             className={`w-1/2 h-full flex  rounded-3xl`}
           >
-            <p className="m-auto">Sign in</p>
+            <p className="m-auto">Register</p>
           </Link>
         </ul>
       </div>

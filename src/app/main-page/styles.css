@@ -1,0 +1,11 @@
+/* main {
+    background: rgb(246, 192, 75);
+    background: radial-gradient(circle, rgba(246, 192, 75, 1) 5%, rgba(214, 212, 197, 1) 57%);
+} */
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(246, 192, 75);
+    background: radial-gradient(circle, rgba(246, 192, 75, 1) 5%, rgba(214, 212, 197, 1) 57%);
+
+}

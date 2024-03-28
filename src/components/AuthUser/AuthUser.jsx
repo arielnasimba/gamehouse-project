@@ -8,7 +8,7 @@ export default function AuthUser() {
     <div
       className={`w-[24rem] h-[52rem]  mx-auto mb-10 flex flex-col justify-end gap-8  `}
     >
-      <div className={`btn_area w-full   h-[22%] flex `}>
+      <div className={`btn_area w-full   h-[22%] flex `} >
         <Image
           alt={logos[2].name}
           src={logos[2].src}
@@ -47,7 +47,7 @@ export default function AuthUser() {
             <p className="m-auto ">New to GameHouse?</p>
           </Link>
           <Link href={`/sign-in`} className={`w-1/2 h-full flex  rounded-3xl`}>
-            <p className="m-auto">Sign in</p>
+            <p className="m-auto">Register</p>
           </Link>
         </ul>
       </div>
