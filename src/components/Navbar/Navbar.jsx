@@ -11,13 +11,13 @@ import { Bars3CenterLeftIcon } from '@heroicons/react/24/outline'
 export default function Navbar() {
   return (
 
-    <nav className={`w-full h-full bg-blue-500 flex`}>
+    <nav className={`w-full h-full  flex  bg-[rgba(221,221,221,0.4)] border-white border-b rounded-b-3xl `}>
         <ul className={` w-[90%] h-[80%] flex  m-auto  justify-between`}>
             <li className={`w-[8%] h-full  flex 
                     tablet:w-[5%]
                     desktopL:w-[4%]
             `}>
-                <Bars3CenterLeftIcon className={`w-full m-auto text-white`} />
+                <Bars3CenterLeftIcon className={`w-full m-auto text-black`} />
                  </li>
 
             <Link
@@ -32,26 +32,26 @@ export default function Navbar() {
 
             <li className='flex '>   
                 <Image
-                alt={logos[0].name}
-                src={logos[0].src}  
+                alt={logos[1].name}
+                src={logos[1].src}  
                 className={`m-auto w-full`}              
             />
                  </li>
             </Link>
             <li className={`w-[6%] h-full  flex
                              
-                            tablet:w-[28%] tablet:h-[66%] tablet:bg-green-400
-                            tablet:rounded-3xl my-auto
+                            tablet:w-[28%] tablet:h-[66%]  tablet:outline tablet:outline-1 tablet:bg-[rgba(221,221,221,0.4)]  tablet:outline-white
+                            tablet:rounded-3xl my-auto 
             `}
             >
                 
-                <input type="text" name="" id="gameSearched"  className={` hidden 
+                <input type="outline" name="" id="gameSearched"  className={` hidden placeholder:text-black
                                                         tablet:flex tablet:w-full tablet:rounded-3xl tablet:bg-transparent
                                                         tablet:
                                                         tablet:pl-5
 
                                                         `} placeholder='Search a game... '/>
-                <MagnifyingGlassIcon className={`w-full text-white  
+                <MagnifyingGlassIcon className={`w-full text-black  
                                                 tablet:absolute  tablet:top-[1.9rem] tablet:w-[1.5rem] tablet:left-[27.3rem]
                                                 desktopM:left-[38.5rem]
                                                 desktopL:left-[55rem]
@@ -62,13 +62,13 @@ export default function Navbar() {
                             desktopM:w-[3%] desktopM:ml-8
                             desktopL:w-[2%] desktopL:ml-24
             `}
-            ><HeartIcon className={`w-full text-white `} /> </li>
+            ><HeartIcon className={`w-full text-black `} /> </li>
             <li className={`w-[6%] h-full  flex
                             tablet:w-[4%]   tablet:-ml-8 tablet:-mr-8 
                             desktopM:w-[3%] desktopM:-ml-20 desktopM:-mr-20
                             desktopL:w-[2%] desktopL:-ml-36 desktopL:-mr-36
             `}
-            ><ShoppingBagIcon className={`w-full text-white`} /> </li>
+            ><ShoppingBagIcon className={`w-full text-black`} /> </li>
 
             <Link
             href={`/user-login`}
@@ -79,7 +79,7 @@ export default function Navbar() {
             `}
             >
             <li className='flex w-full h-full'>
-                <button type="button" className='w-[6rem] h-[2.2rem] bg-slate-400 rounded-3xl m-auto'>
+                <button type="button" className='w-[6rem] h-[2.2rem] bg-[rgba(221,221,221,0.4)] outline-white outline outline-1 rounded-3xl m-auto'>
 
                 Connexion
 
