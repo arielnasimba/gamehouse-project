@@ -115,7 +115,7 @@ export default function Footer() {
           ">
             {paiments.map((logo, id) => {
               return (
-                <div
+                <div key={logo.id}
                   
                   className="col-span-1 w-[2.5rem] h-[2.2rem]  rounded-lg flex
                   
