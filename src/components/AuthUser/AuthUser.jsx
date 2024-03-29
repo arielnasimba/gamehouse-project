@@ -1,12 +1,24 @@
+"use client"
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import logos from "../../images-dir/logoImages";
 import Link from "next/link";
 
 export default function AuthUser() {
+
+    const [nameUser, setNameUser] = useState({
+      name: "",
+      pwd : 0
+    });
+
+    const getUserData =() => {
+      setNameUser( prevData => prevDat)
+      setPwdUser(document.querySelector("#userPwd").value)
+    }
   return (
     <div
-      className={`w-[24rem] h-[52rem]  mx-auto mb-10 flex flex-col justify-end gap-8  `}
+      className={`w-[24rem] h-[52rem]  mx-auto mb-10 flex flex-col justify-end gap-8 `}
     >
       <div className={`btn_area w-full   h-[22%] flex `} >
         <Image
@@ -26,16 +38,19 @@ export default function AuthUser() {
       > 
         
         <p>Username *</p>
-        <input type="text" name="" id="userName" className="w-full h-[28%] rounded-3xl placeholder:pl-5 " placeholder="Enter your username" />
+        <input
+        // onChange={}
+        type="text" name=""  id="userName" className="w-full h-[28%] rounded-3xl placeholder:pl-5 " placeholder="Enter your username" />
         
         <p>Password *</p>
-        <input type="password" name="" id="userPwd" className="w-full h-[28%] rounded-3xl placeholder:pl-5" placeholder="***********"/>
+        <input type="password" name=""  id="userPwd" className="w-full h-[28%] rounded-3xl placeholder:pl-5" placeholder="***********"/>
 
       </div>
       <div
         className={`btn_play_area w-full font-semibold  h-[7.477%]  text-center`}
       >
-        <Link href={`/`} className={`w-full h-full flex bg-black rounded-3xl`}>
+        <Link onClick={() => getUserData()}
+        href={`/main-page/${'cds'}`} className={`w-full h-full flex bg-black rounded-3xl`}>
           <p className="m-auto text-white">Play</p>
         </Link>
       </div>
@@ -46,7 +61,8 @@ export default function AuthUser() {
           <Link href={``} className={`w-1/2 h-full flex  rounded-3xl`}>
             <p className="m-auto ">New to GameHouse?</p>
           </Link>
-          <Link href={`/sign-in`} className={`w-1/2 h-full flex  rounded-3xl`}>
+          <Link href={`/sign-in`} className={`w-1/2 h-full flex  rounded-3xl`}
+          >
             <p className="m-auto">Register</p>
           </Link>
         </ul>
