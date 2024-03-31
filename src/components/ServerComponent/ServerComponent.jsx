@@ -15,7 +15,7 @@ import React from 'react'
 
                 return(
 
-                    <div className="">
+                    <div key={el.id} className="">
 
                         <h2> totle component product</h2>   
                     </div>
