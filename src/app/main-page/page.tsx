@@ -3,7 +3,7 @@ import Image from "next/image";
 import "./styles.css";
 import Navbar from "../../components/Navbar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
-import AreaGames from "../../components/AreaGames/AreaGames";
+// import AreaGames from "../../components/AreaGames/AreaGames";
 import React, {useState } from "react";
 // import apiPage from "../../app/apiPage/page"
 

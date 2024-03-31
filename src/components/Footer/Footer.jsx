@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer
-      className={`w-[95%] mx-auto h-[60rem] bg-[rgba(221,221,221,0.4)] rounded-3xl border-white border mb-10  mt-32 grid grid-cols-1 grid-rows-4 p-5 gap-y-1 
+      className={`w-[95%] mx-auto h-[50rem] bg-[rgba(221,221,221,0.4)] rounded-3xl border-white border mb-10  mt-32 grid grid-cols-1 grid-rows-4 p-5 gap-y-1 
                     tablet:grid-cols-2 tablet:grid-rows-2 tablet:h-[30rem]  
                     desktopM:grid-cols-4 desktopM:h-[13rem]
                     desktopL:grid-cols-4 desktopL:h-[12.5rem]

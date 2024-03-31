@@ -7,12 +7,19 @@ import axios from 'axios';
 import { fetchContent } from '../../redux/slices/contentSlice';
 import Card from "../../components/Card/Card"
 
+import ServerComponent from "../ServerComponent/ServerComponent"
 
- function AreaGames (){
+
+export  const AreaGames = ( {children} ) =>{
 
   // const [dataGames, setDataGames] = useState([]);
 
+console.log('chsqbc');
+
     // const dispatch = useDispatch();
+    const lib = useSelector(state => state.DB.database)
+    // console.log(lib);
+    // console.log('cdbhbsi');
 
     // useEffect(() => {
     //   dispatch(fetchContent())
@@ -33,11 +40,12 @@ import Card from "../../components/Card/Card"
     // }
     
   return (
-    <div className={`area-game w-full h-full grid grid-cols-2 gap-2 overflow-y-scroll
+    <div className={`area-game w-full h-full grid grid-cols-2 gap-2 overflow-y-scroll bg-slate-500
                           tablet:grid-cols-4 tablet:gap-1
                           desktopM:grid-cols-5
                           desktopL:grid-cols-6 
     `}>
+      {/* <Card/>
       <Card/>
       <Card/>
       <Card/>
@@ -48,8 +56,11 @@ import Card from "../../components/Card/Card"
       <Card/>
       <Card/>
       <Card/>
-      <Card/>
-      <Card/>
+      <Card/> */}
+      {
+        lib
+      }
+      helloo i m client compornenrt
 {/* {
          
           contents.map((el) => {
@@ -64,6 +75,12 @@ import Card from "../../components/Card/Card"
         }   */}
 
         {/* { JSON.stringify(dataGames)} */}
+
+
+        {/* <ServerComponent /> */}
+        {/* <ServerComponent/> */}
+        
+        {children}
 
     </div>
   )
